@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".elm").hover(function(){
+                var elm=$(".elm");
+                elm.css('background-color','gray');
+            });
+            $(".elm").mouseout(function(){
+                var elm=$(".elm");
+                elm.css('background-color','');
+            });
+
+        });
+    </script>
+    <script>
+        function getDateTime() {
+            var now     = new Date(); 
+            var year    = now.getFullYear();
+            var month   = now.getMonth()+1; 
+            var day     = now.getDate();
+            var hour    = now.getHours();
+            var minute  = now.getMinutes();
+            var second  = now.getSeconds(); 
+            if(month.toString().length == 1) {
+                 month = '0'+month;
+            }
+            if(day.toString().length == 1) {
+                 day = '0'+day;
+            }   
+            if(hour.toString().length == 1) {
+                 hour = '0'+hour;
+            }
+            if(minute.toString().length == 1) {
+                 minute = '0'+minute;
+            }
+            if(second.toString().length == 1) {
+                 second = '0'+second;
+            }   
+            var dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;   
+             return dateTime;
+        }
+    
+        
+        setInterval(function(){
+            currentTime = getDateTime();
+            document.getElementById("digital-clock").innerHTML = currentTime;
+        }, 0);
+    </script>
+
+</head>
+
+<body>
+    <div id="page">
+        <nav class="bar" >
+            <img class="logo" src="logo.png" style="margin-left:2px;">
+            <ul style="margin-top: 10px;">
+                <li><a id="club" >Teruel Volleyball Club</a></li>
+                <li><a class="elm1" href="history.html">History</a></li>
+                <li><a class="elm2" href="honors.html">Honors</a></li>
+                <li><a class="elm3" href="organizationChart.html">Organization Chart</a></li>
+                <li><a class="elm4" href="fixture.html">Fixture</a></li>
+                <li><a class="elm5" href="codeOfConduct.html">Code of Condact</a></li>
+                <li><a id="digital-clock"></a></li>
+                
+            </ul>
+        </nav>
+        <div class="center">
+            <table cellspacing="0" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th style="text-align: center;">Number</th>
+                        <th style="text-align: left;">Name</th>
+                        <th style="text-align: center"> Position </th>
+                        <th style="text-align: center"> Height </th>
+                        <th style="text-align: center"> Weight </th>
+                        <th style="text-align: center"> Birth Year </th>
+                        <th style="text-align: center"> Spike reach </th>
+                        <th style="text-align: center"> Block reach </th>
+                        <th style="text-align: center"> Nationality </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="rlvI">
+                        <td></td>
+
+                        <td align="center">1</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=1627&ID=1114">RADUNOVIC
+                                Balsa</a>
+
+                        </td>
+                        <td align="center">Outside spiker</td>
+                        <td align="center">205</td>
+                        <td align="center">95</td>
+                        <td align="center">1992</td>
+                        <td align="center">355</td>
+                        <td align="center">345</td>
+                        <td align="center">MNE</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">3</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=51631&ID=1114">RODRÍGUEZ
+                                PÉREZ Victor</a>
+
+                        </td>
+                        <td align="center">Outside spiker</td>
+                        <td align="center">199</td>
+                        <td align="center">85</td>
+                        <td align="center">1998</td>
+                        <td align="center">360</td>
+                        <td align="center">350</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+                    <tr class="rlvI">
+                        <td></td>
+                        <td align="center">6</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=5030&ID=1114">TORCELLO
+                                Maximo</a>
+
+                        </td>
+                        <td align="center">Opposite</td>
+                        <td align="center">200</td>
+                        <td align="center">92</td>
+                        <td align="center">1981</td>
+                        <td align="center">345</td>
+                        <td align="center">325</td>
+                        <td align="center">ARG</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">7</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=6005&ID=1114">FORNES
+                                Miguel Angel</a>
+
+                        </td>
+                        <td align="center">Middle blocker</td>
+                        <td align="center">204</td>
+                        <td align="center">90</td>
+                        <td align="center">1993</td>
+                        <td align="center">360</td>
+                        <td align="center">338</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+                    <tr class="rlvI">
+                        <td></td>
+                        <td align="center">8</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=75139&ID=1114">JOVANOVIC
+                                Milan</a>
+
+                        </td>
+                        <td align="center">Setter</td>
+                        <td align="center">195</td>
+                        <td align="center">85</td>
+                        <td align="center">1996</td>
+                        <td align="center">345</td>
+                        <td align="center">333</td>
+                        <td align="center">SRB</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">9</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=5998&ID=1114">BUGALLO
+                                Pablo</a>
+
+                        </td>
+                        <td align="center">Middle blocker</td>
+                        <td align="center">197</td>
+                        <td align="center">97</td>
+                        <td align="center">1991</td>
+                        <td align="center">350</td>
+                        <td align="center">335</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+                    <tr class="rlvI">
+                        <td></td>
+                        <td align="center">10</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=28154&ID=1114">RANGEL
+                                Pedro</a>
+
+                        </td>
+                        <td align="center">Setter</td>
+                        <td align="center">194</td>
+                        <td align="center">78</td>
+                        <td align="center">1988</td>
+                        <td align="center">355</td>
+                        <td align="center">343</td>
+                        <td align="center">MEX</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">11</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=51624&ID=1114">COLITO
+                                Augusto Renato</a>
+
+                        </td>
+                        <td align="center">Opposite</td>
+                        <td align="center">197</td>
+                        <td align="center">82</td>
+                        <td align="center">1997</td>
+                        <td align="center">350</td>
+                        <td align="center">338</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+                    <tr class="rlvI">
+                        <td></td>
+                        <td align="center">13</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=5999&ID=1114">VILLENA
+                                Andres Jesus</a>
+
+                        </td>
+                        <td align="center">Opposite</td>
+                        <td align="center">196</td>
+                        <td align="center">94</td>
+                        <td align="center">1993</td>
+                        <td align="center">360</td>
+                        <td align="center">350</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">14</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=75116&ID=1114">CABRERA
+                                Jose Vicente</a>
+
+                        </td>
+                        <td align="center">Middle blocker</td>
+                        <td align="center">190</td>
+                        <td align="center">79</td>
+                        <td align="center">1992</td>
+                        <td align="center">345</td>
+                        <td align="center">326</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+                    <tr class="rlvI">
+                        <td></td>
+                        <td align="center">18</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=13624&ID=1114">GAMIZ
+                                Aaron</a>
+
+                        </td>
+                        <td align="center">Libero</td>
+                        <td align="center">179</td>
+                        <td align="center">71</td>
+                        <td align="center">1989</td>
+                        <td align="center">305</td>
+                        <td align="center">290</td>
+                        <td align="center">ESP</td>
+                    </tr>
+
+
+                    <tr class="rlvA">
+                        <td></td>
+                        <td align="center">21</td>
+                        <td>
+                            <a
+                                href="https://www.cev.eu/Competition-Area/PlayerDetails.aspx?TeamID=11091&PlayerID=5612&ID=1114">EREU
+                                SANTANDER Thomas Enrique</a>
+
+                        </td>
+                        <td align="center">Outside spiker</td>
+                        <td align="center">192</td>
+                        <td align="center">92</td>
+                        <td align="center">1979</td>
+                        <td align="center">345</td>
+                        <td align="center">334</td>
+                        <td align="center">VEN</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+
+
+
+
+        <div class="information" >
+            <ul>
+                <li class="address" value="adress">Address: C/ Luis Buñuel nº 6 - 44002 - Teruel</li>
+                <li class="phone" value="phone">Phone: (+34) 978 62 50 76</li>
+                <li class="email" value="email">email: club@voleibolteruel.com</li>
+            </ul>
+        </div>
+
+
+        <div class="social"><a title="Twitter" href="https://twitter.com/CVTeruel" class="twitter"><span>Twitter
+                </span></a><a title="Facebook" href="https://www.facebook.com/voleibolteruel"><span>Facebook
+                </span></a><a title="Mail" href="mailto:club@voleibolteruel.com" class="mail"><span>Mail</span></a>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+   
+    padding:0;
+    margin:0;
+}
+
+.bar .logo{
+    align-self: auto;
+    height:120px;
+}
+#page{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    height:100vh;
+    display:list-item;
+    min-width: 500px;
+    
+}
+.logo{
+    -webkit-animation:rotation 4s infinite linear;
+    position:fixed;
+    
+    margin-left:25px;
+    margin-bottom:25px;
+}
+@-webkit-keyframes rotation{
+    from{
+        -webkit-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(360deg);
+    }
+}
+table{
+    background: white;
+    border:1px solid black;
+    opacity:0.8;
+
+}
+
+.bar{
+    height:125px;
+    width:100%;
+    background: black;
+    padding-top: 5px;
+
+    
+}
+.logo{
+    width:150px;
+    height:auto;
+}
+.bar ul{
+    float:right;
+    margin-right:20px;
+
+}
+.bar ul li{
+    list-style: none;
+    margin:0 8px;
+    display:inline-block;
+    line-height: 80x;
+
+}
+
+.social{
+    float:right;
+    margin-right:10px;
+    bottom:0;right:0;position:fixed;
+    font-size: 2em;
+}
+.information ul {
+    
+    display:inline-block;
+    bottom:0; left:0;position:fixed;
+    margin-bottom: 5px;
+    background: white;
+    opacity: 0.8;
+    
+}
+.rlvI{
+    background-color:rgb(209, 208, 208);
+}
+.information ul li {
+    text-decoration: none;
+    display: inline;
+    color:black;
+    font-size: 20px;
+    padding:6px 13px;
+    font-family: 'Roboto',sans-serif;
+    transition: .2s;
+}
+.bar ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding:6px 13px;
+    font-family: 'Roboto',sans-serif;
+    transition: .2s;
+}
+.bar ul li a .club{
+    color:green;
+
+}
+
+.bar ul li a:hover{
+    background: gray;
+    border-radius: 2px solid red;
+}
+#digital-clock:hover{
+background: black;
+}
+#club:hover{
+    background:orange ;
+}
